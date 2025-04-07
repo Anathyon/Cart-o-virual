@@ -22,7 +22,7 @@ O tema e o avatar mudam de acordo com o modo selecionado!Aqui está uma prévia 
 
 Como usar
 Clone o repositório:
-git clone https://github.com/Anathyon/seu-repositorio.git
+git clone https://github.com/Anathyon/Cart-o-virual.git
 
 Tecnologias Usadas
 Tecnologia	Descrição
