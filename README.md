@@ -20,9 +20,9 @@ O cartão apresenta os principais contatos e redes sociais, com compatibilidade 
 ## 🖼️ Preview
 
 O tema e o avatar mudam automaticamente conforme o modo escolhido!  
-Aqui está uma prévia visual (adicione uma imagem real do cartão se quiser):  
+Aqui está uma prévia visual:  
 <div align="center">
-  <img src="./public/assets/cartao-preview.png" width="400" alt="Cartão Virtual Preview" />
+  <img src="/assets/cartao-preview.png" width="400" alt="Cartão Virtual Preview" />
 </div>
 
 ---
