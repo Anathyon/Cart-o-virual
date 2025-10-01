@@ -1,23 +1,22 @@
 "use strict";
-const btn_modo = document.querySelector("#btn_modo");
 const html = document.documentElement;
-const img = document.querySelector("#perfil");
-const user_insta = document.querySelector("#user_insta");
-const f_pag = document.querySelector("#f_pag");
+const avatar = document.querySelector("#avatar");
 const alternar_modo = document.querySelector("#alternar_modo");
-const ne_elem_bt = document.createElement("button");
-const ne_elem_span = document.createElement("span");
-ne_elem_bt.setAttribute("id", "btn_modo");
-ne_elem_span.setAttribute("id", "sp_simu");
-alternar_modo.append(ne_elem_bt, ne_elem_span);
-ne_elem_bt.addEventListener("click", () => {
+// Cria os elementos do switch (botão e pino)
+const switchContainer = document.querySelector("#sp_simu");
+const switchButton = document.querySelector("#btn_modo");
+// Lógica de alternância de tema
+alternar_modo.addEventListener("click", () => {
+    // Alterna a classe 'claro' no <html>
     html.classList.toggle("claro");
+    // Atualiza a imagem do avatar de acordo com o tema
+    // Você precisa ter 'avatar-c.svg' (claro) e 'avatar-e.svg' (escuro) na pasta 'imagens'
     if (html.classList.contains("claro")) {
-        img.setAttribute("src", "avatar-c.png");
+        // Tema claro ativado
+        avatar.setAttribute("src", "svg/avatar-a.svg"); // Mude para o nome correto da sua imagem CLARA
     }
     else {
-        img.setAttribute("src", "avatar-e.png");
+        // Tema escuro ativado
+        avatar.setAttribute("src", "svg/avatar-a.svg"); // Mantenha o nome original da sua imagem ESCURA
     }
 });
-user_insta.innerHTML = "@anathyon";
-f_pag.innerHTML = "Entre em contato!";

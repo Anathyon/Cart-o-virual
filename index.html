@@ -1,5 +1,6 @@
 <!DOCTYPE html>
- <html lang="pt-br"  > 
+<html lang="pt-br">
+
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta charset="UTF-8">
@@ -8,44 +9,109 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>Cartão virtual</title>
 </head>
+
 <body>
+    <header id="cabecalho">
+        <h1>CARTÃO VIRTUAL</h1>
+        <button id="alternar_modo">
+            <span id="sp_simu"></span>
+            <span id="btn_modo"></span>
+            Modo Aurora
+        </button>
+    </header>
+
     <main id="cont_base">
-        <section id="perfil"> 
-            <img class="tam_img" src="imagens/avatar-a.svg" alt="Iagem de perfil">
-            <p id="user_insta"></p> 
+        <section id="coluna-esquerda">
+            <div id="perfil">
+                <img id="avatar" src="svg/avatar-a.svg" alt="Imagem de perfil">
+                <span id="status-online">ONLINE</span>
+            </div>
+
+            <h2 id="nome">Anathyon Erysson</h2>
+            <p id="profissao">Criador de experiências digitais com foco em interfaces imersivas e acessíveis.</p>
+            <p id="user_insta">@anathyon</p>
+
+            <div id="bloco-links">
+                <a draggable="false" target="_blank" class="link_cx"
+                    href="https://github.com/Anathyon?tab=overview&from=2023-10-01&to=2023-10-31">
+                    <i class="bi bi-github"></i>
+                    <div class="link-info">
+                        <span class="link-titulo">GitHub</span>
+                        <span class="link-descricao">Projetos recentes e contribuições</span>
+                    </div>
+                    <i class="bi bi-send-fill link-icone"></i>
+                </a>
+
+                <a draggable="false" target="_blank" class="link_cx"
+                    href="https://api.whatsapp.com/send/?phone=5588994147362&text&type=phone_number&app_absent=0">
+                    <i class="bi bi-whatsapp"></i>
+                    <div class="link-info">
+                        <span class="link-titulo">WhatsApp</span>
+                        <span class="link-descricao">Converse em tempo real</span>
+                    </div>
+                    <i class="bi bi-send-fill link-icone"></i>
+                </a>
+
+                <a draggable="false" target="_blank" class="link_cx"
+                    href="https://www.linkedin.com/in/anathyon-erysson-62112b239/?trk=public-profile-join-page">
+                    <i class="bi bi-linkedin"></i>
+                    <div class="link-info">
+                        <span class="link-titulo">LinkedIn</span>
+                        <span class="link-descricao">Trajetória profissional e networking</span>
+                    </div>
+                    <i class="bi bi-send-fill link-icone"></i>
+                </a>
+
+                <a draggable="false" target="_blank" class="link_cx" href="http://t.me/Anathyon">
+                    <i class="bi bi-telegram"></i>
+                    <div class="link-info">
+                        <span class="link-titulo">Telegram</span>
+                        <span class="link-descricao">Contato direto e rápido</span>
+                    </div>
+                    <i class="bi bi-send-fill link-icone"></i>
+                </a>
+            </div>
         </section>
-        <section id="alternar_modo">
-       </section>
-    <section>
-        <ul class="bloco_link">
-            <li> <a draggable="false" target="_blank" class="link_cx" href="https://github.com/Anathyon?tab=overview&from=2023-10-01&to=2023-10-31"> GitHub </a> </li>
-        </ul>
-        <ul class="bloco_link">
-            <li> <a draggable="false" target="_blank" class="link_cx" href="https://api.whatsapp.com/send/?phone=5588994147362&text&type=phone_number&app_absent=0"> WhatsApp </a> </li>
-        </ul>
-        <ul class="bloco_link">
-            <li> <a draggable="false" target="_blank" class="link_cx" href="https://www.linkedin.com/in/anathyon-erysson-62112b239/?trk=public-profile-join-page"> Linkedin </a> </li>
-        </ul>
-        <ul class="bloco_link">
-            <li> <a draggable="false" target="_blank" class="link_cx" href="http://t.me/Anathyon"> Telegram </a> </li>
-        </ul>
-    </section>
-        <nav id="icones">
-          <a class="icones_link" draggable="false" href="https://github.com/Anathyon?tab=overview&from=2023-10-01&to=2023-10-31" target="_blank"><i class="bi bi-github"></i></a>
-          <a class="icones_link" draggable="false" href="https://api.whatsapp.com/send/?phone=5588994147362&text&type=phone_number&app_absent=0" target="_blank"><i class="bi bi-whatsapp"></i></a>
-          <a class="icones_link" draggable="false" href="https://www.linkedin.com/in/anathyon-erysson-62112b239/?trk=public-profile-join-page" target="_blank"><i class="bi bi-linkedin"></i></a> 
-          <a class="icones_link" draggable="false" href="http://t.me/Anathyon" target="_blank"><i class="bi bi-telegram"></i></a>  
-        </nav>
-          <footer id="f_pag"></footer>
-</main>
-    
+
+        <section id="coluna-direita">
+            <div id="manisfesto-box">
+                <h3 class="box-titulo">MANISFESTO</h3>
+                <p class="box-conteudo">
+                    "Transformo ideias em produtos digitais de alto impacto. Busco composições elegantes, micro
+                    animações envolventes e experiências que conectam pessoas."
+                </p>
+
+                <h3 class="box-titulo">DISPONIBILIDADE</h3>
+                <div id="disponibilidade">
+                    <p>Aberto para colaborações criativas e projetos freelance.</p>
+                </div>
+
+                <a id="btn-iniciar-conversa" href="https://api.whatsapp.com/send/?phone=5588994147362&text&type=phone_number&app_absent=0" target="_blank">
+                    <span id="btn-texto">Iniciar uma conversa</span>
+                    <i class="bi bi-send-fill"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="f_pag">
+        <div id="contato-info">
+            <p>ENTRE EM CONTATO SEMPRE QUE QUISER</p>
+        </div>
+        <div id="status-info">
+            <span class="status-dot disponivel"></span>
+            DISPONÍVEL
+            <span class="status-dot local"></span>
+            MERUOCA • BRASIL
+        </div>
+    </footer>
+
     <script src="script_js/index.js"></script>
 </body>
+
 </html>
-
-
-
-

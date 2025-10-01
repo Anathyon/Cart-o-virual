@@ -1,0 +1,15 @@
+{
+  "name": "visit-card",
+  "version": "2.0.0",
+  "description": "Cartão virtual para contato imediato",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anathyon",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

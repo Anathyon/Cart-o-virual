@@ -1,25 +1,23 @@
-const btn_modo = document.querySelector("#btn_modo") as HTMLButtonElement
-const html = document.documentElement as HTMLElement
-const img = document.querySelector("#perfil") as HTMLImageElement
-const user_insta = document.querySelector("#user_insta") as HTMLParagraphElement
-const f_pag = document.querySelector("#f_pag") as HTMLElement
-const alternar_modo = document.querySelector("#alternar_modo") as HTMLElement
+const html = document.documentElement as HTMLHtmlElement
+const avatar = document.querySelector("#avatar") as HTMLImageElement
+const alternar_modo = document.querySelector("#alternar_modo") as HTMLButtonElement
 
-const ne_elem_bt = document.createElement("button")
-const ne_elem_span = document.createElement("span")
-ne_elem_bt.setAttribute("id","btn_modo")
-ne_elem_span.setAttribute("id","sp_simu")
+// Cria os elementos do switch (botão e pino)
+const switchContainer = document.querySelector("#sp_simu") as HTMLDivElement;
+const switchButton = document.querySelector("#btn_modo") as HTMLButtonElement;
 
-alternar_modo.append(ne_elem_bt,ne_elem_span)
-
-ne_elem_bt.addEventListener ("click", () => {
-    html.classList.toggle("claro")
+// Lógica de alternância de tema
+alternar_modo.addEventListener("click", () => {
+    // Alterna a classe 'claro' no <html>
+    html.classList.toggle("claro");
+    
+    // Atualiza a imagem do avatar de acordo com o tema
+    // Você precisa ter 'avatar-c.svg' (claro) e 'avatar-e.svg' (escuro) na pasta 'imagens'
     if (html.classList.contains("claro")) {
-        img.setAttribute("src","avatar-c.png")
-    }else{
-        img.setAttribute("src","avatar-e.png")
+        // Tema claro ativado
+        avatar.setAttribute("src", "svg/avatar-a.svg"); // Mude para o nome correto da sua imagem CLARA
+    } else {
+        // Tema escuro ativado
+        avatar.setAttribute("src", "svg/avatar-a.svg"); // Mantenha o nome original da sua imagem ESCURA
     }
-})
-
-user_insta.innerHTML = "@anathyon"
-f_pag.innerHTML = "Entre em contato!"
+});
